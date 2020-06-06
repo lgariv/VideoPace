@@ -1,9 +1,9 @@
 entry = {
   icon = "/Library/PreferenceLoader/Preferences/VideoPace.png";
-  label = VideoPace;
+  label = VideoPace 2;
   cell = PSLinkCell;
 };
-title = VideoPace;
+title = VideoPace 2;
 items = (
   {
     cell = PSLinkListCell;

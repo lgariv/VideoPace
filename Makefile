@@ -4,9 +4,10 @@ VIdeoPace_FRAMEWORKS = UIKit
 
 ADDITIONAL_CFLAGS = -std=c99
 
-IPHONE_ARCHS = armv7 arm64
-TARGET_IPHONEOS_DEPLOYMENT_VERSION = 4.3
-TARGET=:clang
+FINALPACKAGE = 1
 
-include framework/makefiles/common.mk
-include framework/makefiles/tweak.mk
+export ARCHS = armv7 arm64 arm64e
+TARGET = iphone:clang:13.1:9.3
+
+include $(THEOS)/makefiles/common.mk
+include $(THEOS_MAKE_PATH)/tweak.mk
